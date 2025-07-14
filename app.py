@@ -4,6 +4,8 @@ import os
 import uuid
 from datetime import datetime
 
+# Updated via CodePipeline!
+
 dynamodb = boto3.resource('dynamodb')
 table_name = os.environ.get('TABLE_NAME', 'Todos')
 table = dynamodb.Table(table_name)
