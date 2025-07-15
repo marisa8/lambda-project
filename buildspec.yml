@@ -3,10 +3,8 @@ version: 0.2
 phases:
   build:
     commands:
-      - mkdir package
-      - cp app.py package/
-      - cd package
-      - zip ../function.zip app.py
+      - mv app.py lambda_function.py
+      - zip function.zip lambda_function.py
 artifacts:
   files:
     - function.zip
