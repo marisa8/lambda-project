@@ -1,12 +1,12 @@
 version: 0.2
 
 phases:
+  install:
+    runtime-versions:
+      python: 3.10
   build:
     commands:
-      - mkdir package
-      - cp app.py package/
-      - cd package
-      - zip ../function.zip app.py
+      - zip function.zip app.py
 artifacts:
   files:
     - function.zip
