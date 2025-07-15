@@ -6,7 +6,7 @@ phases:
       python: 3.10
   build:
     commands:
-      - zip -r lambda.zip ./lambda_function.py
+      - zip function.zip app.py
 artifacts:
   files:
-    - lambda.zip
+    - function.zip
